@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cambão</title>
+      <script src="./home.js"></script>
+      <link rel="stylesheet" href="./home.css">
+   </head>
+   <body>
+      <header>
+         <div class="cabecalho">
+            <div>
+               <h2>Cambão</h2>
+            </div>
+            <div class="right button-add">
+               <div id="botoes-iniciais">
+                  <button title="Arraste para Excluir" id="lixeira" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)">  
+                  Lixeira    </button>   
+                  <button onclick="addTask()">  + Adicionar Tarefa</button>  
+               </div>
+               <button style="display: none;" id="botao-voltar" onclick="voltar()""> Voltar </button>   
+            </div>
+         </div>
+      </header>
+      <div id="cambao">
+         <div class="area" id="area_todo" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)">
+            <p class="title-area">To Do</p>
+         </div>
+         <div class="area" id="area_doing" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)">
+            <p class="title-area">Doing</p>
+         </div>
+         <div class="area" id="area_done" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)">
+            <p class="title-area">Done</p>
+         </div>
+      </div>
+      <div id="add-task" style="display: none">
+         <div class="div-addTask">
+            <form>
+               <label for="tituloTarefa">Título da tarefa</label>
+               <input type="text" id="tituloTarefa" name="tituloTarefa" placeholder="Ler livro" required>
+               <label for="descricao">Descrição</label>
+               <input required type="text" id="descricao" name="descricao" placeholder="Realizar leitura do livro Clean Code..">
+               <label for="prioridade">Prioridade</label>
+               <select id="prioridade" name="prioridade">
+                  <option value="baixa">Baixa</option>
+                  <option value="media">Média</option>
+                  <option value="alta">Alta</option>
+               </select>
+               <label for="status">Status</label>
+               <select id="status" name="status">
+                  <option value="todo">To Do</option>
+                  <option value="doing">Doing</option>
+                  <option value="done">Done</option>
+               </select>
+               <input type="button" value="Adicionar" onclick="submitAddTask()">
+               <p id="obrigatorios" style="display: none;"></p>
+            </form>
+         </div>
+      </div>
+   </body>
+</html>

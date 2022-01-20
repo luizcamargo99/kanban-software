@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right,  #ff9633 0%, #da12f5 100%);
+}
+
+h2 {
+    padding: 20px 0 0 50px;
+    position: absolute;
+    height: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p, span, label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-area{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.logo {
+    padding-left:  50px;
+    position: absolute;
+    height: 70px;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.right {
+    text-align: right;
+}
+
+button {
+    background: linear-gradient(to bottom, #ff3333 0%, #ff0481 100%);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background: linear-gradient(to bottom, #ff1717 0%, #f351a2 100%);
+}
+
+.button-add{
+    padding: 10px 50px;
+}
+
+.area {
+    width: 350px;
+    height: 500px;
+    background-color: #dfdfdf;
+    float: left;
+    margin: 47px 48px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.box{
+    position: relative;
+    height: 12%;
+    margin: 5px 5px 5px 5px;
+    border-radius: 8px;
+    border: outset;
+    border-width: thin;
+    padding: 20px;
+}
+
+.box-alta {
+    background: linear-gradient(to bottom, #fd414a 0%, #f3b5d4 100%);
+}
+
+.box-media {
+    background: linear-gradient(to bottom, #ff9633 0%, #f3b5d4 100%);
+}
+
+.box-baixa {
+    background: linear-gradient(to bottom, #47bafd 0%, #f3b5d4 100%);
+}
+
+.div-addTask {
+    width: 90%;
+    height: 430px;
+    background-color: #dfdfdf;
+    float: left;
+    margin: 47px 48px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+input[type=text], select {
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  } 
+  
+  input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }  
+  
+form {
+    margin: 30px;
+}
+
+:disabled{
+    opacity: 0.8;
+    pointer-events:none;
+    outline:none;
+}
+
+#obrigatorios {
+    color: red;
+    text-align: center;
+}
+
+.titulo-box {
+    font-size: 20px;
+}
+
+.descricao-box {
+    font-size: 12px;
+}
