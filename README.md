@@ -2,7 +2,7 @@
 
 Tecnologias Utilizadas: HTML, CSS e Javascript.
 
-Objetivo do projeto: Criar um sisteminha totalmente local para gerenciamento de tarefas, com foco na evolução na acadêmica.
+Objetivo do projeto: Criar um sisteminha totalmente local para gerenciamento de tarefas, com foco na evolução acadêmica.
 
 Principais conceitos: Drag e Drop.
 
